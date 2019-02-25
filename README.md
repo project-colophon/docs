@@ -1,3 +1,7 @@
+---
+description: Getting to know Colophon
+---
+
 # Introduction
 
 ### What is Colophon?
@@ -23,4 +27,6 @@ information such as:
   * external references to the project _\(e.g. kanban board, budget\)_
 * Use in CI/CD tooling to annotate your artefacts / notify owners
 * Correlation of application instances and source code through exposing the project's `id` value in HTTP Headers / HTML Meta
+
+
 
