@@ -14,7 +14,7 @@ Learn more about [creating GitHub Apps](https://developer.github.com/apps/buildi
 
 Depending on your usage, your entry point for creating a GitHub app will differ:
 
-* Personal Accounts: [`https://github.com/settings/apps/new`](https://github.com/settings/apps/new)\`\`
+* Personal Accounts: [`https://github.com/settings/apps/new`](https://github.com/settings/apps/new)
 * GitHub Accounts `https://github.com/organizations/[your-org-name]/settings/apps/new`
 
 You'll be asked provide details for the app, here are the **required** values:
