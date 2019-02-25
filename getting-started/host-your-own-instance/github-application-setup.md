@@ -19,52 +19,15 @@ Depending on your usage, your entry point for creating a GitHub app will differ:
 
 You'll be asked provide details for the app, here are the **required** values:
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Field</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><b>GitHub App name</b>
-      </td>
-      <td style="text-align:left">Can be anything, suggest using <code>colophon</code> + <code>you-org-name</code> as
-        a suffix</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>Homepage URL</b>
-      </td>
-      <td style="text-align:left">Set to <code>https://colophon.id</code>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>User authorization callback URL</b>
-      </td>
-      <td style="text-align:left">
-        <p>The full URL to redirect to after a user authorizes an installation.</p>
-        <p>Use <code>https://your-app-domain</code> + <code>/auth/callback</code>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>Webhook URL</b>
-      </td>
-      <td style="text-align:left">
-        <p>Events will <code>POST</code> to this URL.</p>
-        <p>Use the root url of the app <code>https://your-app-domain</code>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>Webhook secret </b><em><b>(optional)</b></em>
-      </td>
-      <td style="text-align:left">While optional, this is recommended to ensure your Colophon data is secure
-        from external manipulation</td>
-    </tr>
-  </tbody>
-</table>### Permissions
+| Field | Description |
+| :--- | :--- |
+| **GitHub App name** | Can be anything, suggest using `colophon` + `you-org-name` as a suffix |
+| **Homepage URL** | Set to `https://colophon.id` |
+| **User authorization callback URL** | The full URL to redirect to after a user authorizes an installation. Use `https://your-app-domain` + `/auth/callback` |
+| **Webhook URL** | Events will `POST` to this URL. Use the root url of the app `https://your-app-domain` |
+| **Webhook secret _(optional)_** | While optional, this is recommended to ensure your Colophon data is secure from external manipulation |
+
+### Permissions
 
 {% hint style="info" %}
 Learn more about [GitHub Permissions](https://developer.github.com/v3/apps/permissions/) from the official GitHub documentation
@@ -112,9 +75,6 @@ Once created, GitHub will generate a few key items you'll need to pass to Coloph
 
 ### Generating a Private key
 
-
-
 You need a private key to sign access token requests to GitHub.
 
 Click _"Generate Private Key"_ and store the downloaded `.pem` file somewhere safe. You'll need to use this for the app environment configuration
-
